@@ -3,6 +3,7 @@ package com.devventurus.throwdice
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -10,17 +11,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val diceOne = findViewById<TextView>(R.id.txt_dice_one)
-        val diceTwo = findViewById<TextView>(R.id.txt_dice_two)
+        val diceOne = findViewById<ImageView>(R.id.dice_one)
+        val diceTwo = findViewById<ImageView>(R.id.dice_two)
         val btnRegister = findViewById<Button>(R.id.btn_register)
 
-        btnRegister.setOnClickListener {
-            diceOne.text = randomNumberCreate().toString()
-            diceTwo.text = randomNumberCreate().toString()
-        }
-    }
+        val dice = listOf(
+            R.drawable.dice_1,
+            R.drawable.dice_2,
+            R.drawable.dice_3,
+            R.drawable.dice_4,
+            R.drawable.dice_5,
+            R.drawable.dice_6 )
 
-    private fun randomNumberCreate() : Int {
-        return (1..6).random()
+        btnRegister.setOnClickListener {
+            diceOne.setImageResource(dice.random())
+            diceTwo.setImageResource(dice.random())
+        }
     }
 }
