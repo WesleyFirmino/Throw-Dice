@@ -8,9 +8,9 @@
 
     <Button
         android:id="@+id/btn_start"
-        android:layout_width="352dp"
-        android:layout_height="41dp"
-        android:layout_marginBottom="56dp"
+        android:layout_width="345dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="28dp"
         android:backgroundTint="@color/green_red_color_state"
         android:text="@string/play"
         app:layout_constraintBottom_toBottomOf="parent"

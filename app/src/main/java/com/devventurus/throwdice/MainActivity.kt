@@ -24,13 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         welcomeMessage.text = getString(R.string.welcome, nameUser)
 
-        val dice = listOf(
-            R.drawable.dice_1,
-            R.drawable.dice_2,
-            R.drawable.dice_3,
-            R.drawable.dice_4,
-            R.drawable.dice_5,
-            R.drawable.dice_6 )
+        val dice = listOf(  R.drawable.dice_1, R.drawable.dice_2, R.drawable.dice_3, R.drawable.dice_4, R.drawable.dice_5, R.drawable.dice_6 )
 
         btnRegister.setOnClickListener {
             diceOne.setImageResource(dice.random())
