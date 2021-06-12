@@ -29,15 +29,13 @@ class ThrowDiceFragment : Fragment() {
     ): View? {
         binding = FragmentThrowDiceBinding.inflate(inflater, container, false)
 
-        //val nameUser = intent.getStringExtra("player_name")
-
         val diceOne = binding?.diceOne
         val diceTwo = binding?.diceTwo
         val btnRegister = binding?.btnStart
         val welcomeMessage = binding?.welcomeMessage
         val shareButton = binding?.share
 
-        //welcomeMessage?.text = getString(R.string.welcome, nameUser)
+        welcomeMessage?.text = getString(R.string.welcome, arguments?.getString("playerName").toString())
 
         val dice = listOf(  R.drawable.dice_1, R.drawable.dice_2, R.drawable.dice_3, R.drawable.dice_4, R.drawable.dice_5, R.drawable.dice_6 )
 

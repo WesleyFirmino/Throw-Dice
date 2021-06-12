@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registerUserFragment">
+
+    <fragment
+        android:id="@+id/registerUserFragment"
+        android:name="com.devventurus.throwdice.RegisterUserFragment"
+        android:label="RegisterUserFragment" >
+        <action
+            android:id="@+id/action_registerUserFragment_to_throwDiceFragment"
+            app:destination="@id/throwDiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/throwDiceFragment"
+        android:name="com.devventurus.throwdice.ThrowDiceFragment"
+        android:label="ThrowDiceFragment" >
+        <argument android:name="player_name"
+            app:argType="string"
+            android:defaultValue="Player" />
+    </fragment>
+</navigation>
