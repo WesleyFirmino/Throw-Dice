@@ -1,13 +1,10 @@
 package com.devventurus.throwdice
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import com.devventurus.throwdice.databinding.FragmentRegisterUserBinding
@@ -33,7 +30,7 @@ class RegisterUserFragment : Fragment() {
         btnRegister?.setOnClickListener {
 
             var playerName = nameUser?.text.toString()
-            findNavController().navigate(R.id.action_registerUserFragment_to_throwDiceFragment, bundleOf("playerName" to playerName))
+            findNavController().navigate(R.id.action_registerUserFragment_to_throwDiceFragment, bundleOf("player_name" to playerName))
         }
 
         return binding?.root

@@ -27,6 +27,7 @@ class ThrowDiceFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         binding = FragmentThrowDiceBinding.inflate(inflater, container, false)
 
         val diceOne = binding?.diceOne
@@ -35,7 +36,7 @@ class ThrowDiceFragment : Fragment() {
         val welcomeMessage = binding?.welcomeMessage
         val shareButton = binding?.share
 
-        welcomeMessage?.text = getString(R.string.welcome, arguments?.getString("playerName").toString())
+        welcomeMessage?.text = getString(R.string.welcome, arguments?.getString("player_name").toString())
 
         val dice = listOf(  R.drawable.dice_1, R.drawable.dice_2, R.drawable.dice_3, R.drawable.dice_4, R.drawable.dice_5, R.drawable.dice_6 )
 

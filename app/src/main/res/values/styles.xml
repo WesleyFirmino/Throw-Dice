@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="buttonPlay">
+        <item name="android:layout_width">345dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:backgroundTint">@color/green_red_color_state</item>
+        <item name="android:fontFamily">@font/lato_black</item>
+        <item name="android:text">@string/play</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="buttonRegister">
+        <item name="android:layout_width">345dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:fontFamily">@font/lato_black</item>
+        <item name="android:text">@string/register</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:backgroundTint">@color/green_500</item>
+    </style>
+    <style name="registerText">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:hint">@string/palceHolder</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>
